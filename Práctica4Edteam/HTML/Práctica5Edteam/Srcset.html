@@ -1,0 +1,37 @@
+<!--  SRCSET :
+Conjunto de rutas de imagenes. Vos le decis, vas a usar esta imagen cuando tengas un deviepixelratio de 1.5x (ejemplo), y  vas a usar esta cuando tengas un device tipo 2x -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Imagenes zoom in and out</title>
+</head>
+<body>
+    <!-- <img src="./img/pexels-photo-316093.jpeg" 
+    srcset="./img/pexels-photo-775907.jpeg 500w, ./img/pexels-photo-1149831.jpeg 800w"
+    > -->
+    
+    <!-- Si pones ./img/pexes....jpeg 1.5x   te va a  cambiar la imagen cuando hags zoom in or out -->
+     <!-- Si pones ./img/pexes....jpeg 800W   (width) te va a  cambiar la imagen cuando acortes la pantalla del navegador  -->
+
+     <picture>
+         <source srcset="./img/pexels-photo-775907.jpeg" media="(min-width:500px)">
+            <!--  como se cumple esta condición, se queda con esta condición, es como un if, if tam<500px, go. Entonces ya nunca evalúa la de abajo. Si los doy vuelta si se cumple -->
+         <source srcset="./img/pexels-photo-1149831.jpeg" media="(min-width:800px)">
+            <img src="./img/pexels-photo-316093.jpeg" alt="">
+     </picture>
+</body>
+</html>
+
+<!-- RESUMEN
+
+        Si querés una sola imagen usas la etiqueta IMG src="img...."
+
+        Si necesitas más de una imagen, podes  usar la etiquta IMG y meterle el srcset y especificar
+
+        Pero si necesitas hacer más variaciones, con media queris usas picture.
+        
+
+
+-->

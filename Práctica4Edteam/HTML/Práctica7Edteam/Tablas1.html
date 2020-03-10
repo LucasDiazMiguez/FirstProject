@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tablas dogggg</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!--  Elemento para ponerle nombre a las tablas CAPTION (VA DENTOR DE la tabla) -->
+    <table >
+        <Colgroup>
+            <!--  para seleccionar una columna usas este comando y pones la cantidad de columnas que querés -->
+            <col>
+            <col>
+            <col>
+            <col style="background: yellow">
+            <col>
+           </Colgroup>
+           <!--  para no poner col 5 veces podés poner col span 4 -->
+        <caption>Nombre de la tabla perri</caption>
+        <!--  NO USAR BORDER, ES SOLO PARA AYUDA  EDITAR CON CSS -->
+<!--  th se usa para encabezados, y necesita ir encerrado en el elemento  thead. Pero si usas un Thead, necesitas un elemento Tbody para meter todo el cuerpo. -->
+  <!--Tr significa TaableRow-  -->
+        <thead>
+                <tr>
+                    <th>Lunes</th>
+                    <th>Martes </th>
+                    <th>Miércoles</th>
+                    <th>Jueves </th>
+                    <th>Viernes</th>
+                </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td rowspan="2"> perro </td>
+                <!-- row span se usa para decir cuantas filas va a ocupar esa variable -->
+                <td>gato </td>
+                <td>ballena</td>
+                <td>tiranosaurio</td>
+                <td>tucán</td>
+                
+            </tr>
+        <tr>
+          <td colspan="4">    recreo       </td>
+            <!-- Colspan se usa para decir cuantas columnas ocupa esa variable -->
+        </tr>
+           
+        <tr>
+
+                <td> 2 am </td>
+                <td> 3 am </td>
+                <td> 4 am </td>
+                <td> 5 am </td>
+            </tr>
+        </tbody> 
+        <tfoot>
+            <tr>
+                <td>Cantidad de tiempo</td>
+                <td>perritos</td>
+                <td>gatos</td>
+            </tr>
+
+          </tfoot>
+    </table>
+</body>
+</html>

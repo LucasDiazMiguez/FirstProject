@@ -1,0 +1,123 @@
+<!-- Formularios MUY EXTENSOS
+    
+    Se pueden agrupar secciones de datos.
+    Siempre pensar en la experiencia de usuario
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formularios</title>
+</head>
+<body>
+    <h1>Formulario</h1>
+       <form>
+        
+        <fieldset>
+            <legend>Con Legend le das el nombre a este campo</legend>
+            <div>
+                <label>Ingrese su nombre
+                    <input type= "text" name="username">
+                </label>
+              </div>
+            <div>
+                  <label >
+                          Ingrese su correo
+                          <input type="email" name="email">
+                  </label>
+                </div>
+            </fieldset>
+           
+           
+            <fieldset>
+              <legend>mete tus datos </legend>
+                <div>
+                    
+                    <label>
+                        Ingrese su contraseña
+                        <input type="password"  name="password">
+                        
+                    </label>
+                    
+                </div>
+                        <div>
+                        <label >
+                            tu fecha de nacimiento
+                            <input type="date" name="date" id="">
+                        </label>    
+                        </div>
+                        <label >
+                            Cantidad de productos
+                            <input type="number" name="number" id="">
+                        </label>    
+                        </div>
+
+     </fieldset>
+
+     <div>
+        <!-- si no tenes ganas de poner una label, solo tenés que poner en el input -->
+        <input name="comida" placeholder="Ingrese su comida favorita">
+    </div>     
+     <input type="submit" value="iniciar sesión">     
+<!-- atributo value son los valores de los formularios -->
+    
+
+<!-- INPUTS SIN ESCRIBIR -->
+<!-- para opciones unicas usas RADIO y para opciones multiples usas -->
+<fieldset>
+    <div>
+        <legend>Pasatiempos</legend>
+        <label>
+            <input type="checkbox" > deportes
+            <input type="checkbox" > cine   
+            <input type="checkbox" > comer
+            <input type="checkbox" > guitarra
+            <input type="checkbox" > salir
+            <input type="checkbox" > bailar
+            <input type="checkbox" > programar
+        </label>
+
+
+
+    </div>
+</fieldset>
+<fieldset>
+    <div>
+        <legend>seleccione su genero</legend>
+        
+             <label>   <input type="radio"name="gender">hombre</label>
+             <label>  <input type="radio"name="gender">mujer</label>
+                <label>  <input type="radio"name="gender">indefinido</label>
+        </div>
+</fieldset>
+<fieldset>
+    <!-- value es e lvalor que vos mandas para que el navegador lea -->
+    <legend>Seleciona tu pais</legend>
+             <select name="country" id="country">
+               <optgroup label="América del sur">
+
+                   <option value="miami">miami</option>
+                   <option value="argentina">argentina</option>
+                   <option value="bolivia">bolivia</option>
+                </optgroup> 
+                <optgroup label="america del norte">
+                        <option value="estados unidos">estados unidos</option>
+                </optgroup>
+                   
+             </select>
+
+</fieldset>
+<fieldset>
+    <!--  elemento textarea:
+    es para escribir(el usuario) mensajes largos  -->
+    <legend>probando textarea</legend>
+    <textarea name="mensajes" id="a" cols="30" rows="10" placeholder= "escribe tu mensaje "></textarea>
+</fieldset>
+
+
+          
+</form>
+
+</body>
+</html>

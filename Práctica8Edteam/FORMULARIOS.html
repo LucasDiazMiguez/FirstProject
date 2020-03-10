@@ -1,0 +1,72 @@
+<!-- Formularios
+Usuario y contraseña
+datos que pone el usuario que después se procesa en un servidor
+HTML solo da la estructura del formulario. Eso lo hace el backend.
+
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formularios</title>
+</head>
+<body>
+    <h1>Formulario</h1>
+    <form>
+        <!--  los formularios tienen campos, cada campo es cada elemento donde recibes datos -->
+        <!-- el atributo for conecta el label con el campo  -->
+       
+             <!-- <label for="Nombre">Ingrese su nombre</label>
+            <input id="Nombre"> -->
+
+        <!--  OTRA FORMA MÁS FÁCIL -->
+      <div>
+          <!--  Elemento label le da el titulo al campo -->
+          
+          <label>Ingrese su nombre
+              <input type= "text" name="username">
+              <!-- Poner entre label y /label el input -->
+            </label>
+        </div>
+            
+        <!-- IMPORTANTE todos los campos del formulario deben tener un atributo name, este es el identificador único 
+        de este campo-->
+            <div>
+                
+                <label>
+                    Ingrese su contraseña
+                    <input type="password"  name="password">
+                    
+                </label>
+                
+            </div>
+
+            <div>
+                <label >
+                        Ingrese su correo
+                        <input type="email" name="email">
+                </label>
+            </div>
+            <div>
+            <label >
+                tu fecha de nacimiento
+                <input type="date" name="date" id="">
+            </label>    
+            </div>
+            <label >
+                Cantidad de productos
+                <input type="number" name="number" id="">
+            </label>    
+            </div>
+            <input type="submit" value="iniciar sesión">     
+<!-- atributo value son los valores de los formularios -->
+
+            <div>
+                <!-- si no tenes ganas de poner una label, solo tenés que poner en el input -->
+                <input name="comida" placeholder="Ingrese su comida favorita">
+            </div>
+</form>
+
+</body>
+</html>
