@@ -1,4 +1,4 @@
 1_¿Workspace?
 2_ puede ir un h2 sin haber puesto antes un h1? Puede pero queda bien?
 3_ No entendi bien el git tag
-4_Cada vez que actualizo el git con commit se actualiza el github?
+4_Cada vez que actualizo el git con commit se actualiza el github? Ahora lo estoy haciendo con GITPULL

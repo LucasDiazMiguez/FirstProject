@@ -21,3 +21,37 @@ Te permite ver el tiempo donde y que hiciste con los commit
 	Comando git reset --mixed 8fba1011987654654f65644565498f6a4565465asd5f
 
 Te vas al commit y haces que se paré ahi, y todo lo que cambiaste después de ese commit aparece pero no esta confirmado, es decir, tenes que poner git add. y git commit
+	
+	Comando gitignore 
+
+Sirve para decirle a git y que registre, que si no nos interesa seguir cambios de una carpeta, no los siga. Sin embargo, se sigue avisando que son innecesarios.           
+
+	
+	Comando git branch "Nueva funcionalidad o nueva rama"
+
+Si tenemos nuestro proyecto que anda de maravillas , pero queremos agregar una nueva funcionalidad par aprobar, podemos hacer una bifurcación de la rama principal.
+
+	Comando git checkout -b ramanueva
+
+Si te da paja crear la rama y despues cambiar a la rama, directamente usa este comando.
+
+
+	Comando git  log --oneline --decorate --all --graph
+Si queremos ver bien en donde nos encontramos
+
+	Comando git checkout nueva_funcionalidad
+
+Si queremos hacer que el head apunte a la nueva rama, usamos este comando. y si queremos ver en donde estamos ponemos  git log --oneline --decorate -- all --graph
+
+	Comando git merge nueva_funcionalidad
+
+Si queres integrar la rama nueva func a la rama master, es decir, poner los cambios de la rama nueva funcionalidad a la rama master. Usas este comando
+
+	Comando git branch -d "Nombre de la rama"
+
+Si queres borrar una rama, usas este comando.
+
+
+	git tag
+
+Sirve para etiquetar versiones importantes del repositorio
