@@ -1,0 +1,23 @@
+
+	Commando git reset --soft 8fba1011987654654f65644565498f6a4565465asd5f  (ejemplo)
+
+
+
+Si en git pones  git reset --soft y pones el número largo de commit (ID) al que querés ir, te lleva pero no hace nada. Simplemente se ubica en ese lugar
+
+
+
+
+
+	Commando git reset --hard 8fba1011987654654f65644565498f6a4565465asd5f
+
+Si queremos recuperar los archivos del commmit de donde estamos parados, Commando git reset --hard el id,
+c
+
+	Comando git reflog
+
+Te permite ver el tiempo donde y que hiciste con los commit
+
+	Comando git reset --mixed 8fba1011987654654f65644565498f6a4565465asd5f
+
+Te vas al commit y haces que se paré ahi, y todo lo que cambiaste después de ese commit aparece pero no esta confirmado, es decir, tenes que poner git add. y git commit
